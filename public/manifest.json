@@ -1,6 +1,8 @@
 {
   "short_name": "Quote Generator",
   "name": "Random Quote Generator - Ruban Gino Singh",
+  "developer": "Ruban Gino Singh",
+  "portfolio": "www.rubangino.in",
   "icons": [
     {
       "src": "rubangino-favicon-logo.png",

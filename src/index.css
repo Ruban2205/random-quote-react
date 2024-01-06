@@ -2,6 +2,20 @@ html{
   overflow: hidden;
 }
 
+:root {
+    /*Colors*/
+    --primary: #ff3838 !important;
+    --secondary: #ff5e57 !important;
+    --grey: #e4e3e3 !important;
+    --dark: #343a40 !important;
+    --very-dark: #212224 !important;
+    --black: #000000 !important;
+    --white: #ffffff !important;
+    /*font family*/
+    --txt: 'Quicksand', sans-serif;
+    --logo: 'Pacifico', sans-serif;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,7 +25,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   height: 100vh;
-  background: #1c2238;
+  background: var(--very-dark); 
 
 }
 
