@@ -15,8 +15,8 @@ export const RandomQuote = () => {
 
     const [quote, setQuote] = useState(
         {
-            text: "Difficulties increase the nearer we get to the goal.",
-            author: "Johann wolfgang von Goethe",
+            text: "The purpose of our lives is to be happy.",
+            author: "Dalai lama",
         }
     )
 
@@ -40,7 +40,14 @@ export const RandomQuote = () => {
                 <div className='bottom'>
                     <div className='author'>- {quote.author.split(',')[0]}</div>
                     <div className='icons'>
-                        <img src={reload_icon} onClick={() => {random()}} alt="" />
+                        <img src={reload_icon} onClick={() => {
+                            try {
+                            random()
+                            }
+                            catch (error) {
+                                alert("Something wrong is happend! Refresh the page and try again!")
+                            }
+                        }} alt="" />
                         <img src={twitter} onClick={() => {twitter_post()}} alt="" />
                     </div>
                 </div>
